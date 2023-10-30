@@ -36,18 +36,15 @@
           <div class="navbar-start hidden lg:flex">
             <a class="p-3 rounded-md bg-black"><img class="w-20" src="./SVG/logo/zhee school.svg" alt="logo"></a>
             <ul class="menu menu-horizontal px-4">
-              <li><a>وبینارها</a></li>
-              <li><a>دوره‌ها</a></li>
-              <li><a>همکاران</a></li>
+              <li><a href="#student">دانش‌آموز هستم</a></li>
+              <li><a href="#teacher">معلم هستم</a></li>
+              <li><a href="#manager">مدیر هستم</a></li>
             </ul>
           </div>
-          <div class="navbar-end lg:hidden">
+          <div class="navbar-end lg:hidden ml-2">
             <a class="p-3 rounded-md bg-black"><img class="w-14" src="./SVG/logo/zhee school.svg" alt="logo"></a>
           </div>
-          <div class="navbar-end gap-1 hidden lg:flex">
-            <a class="btn btn-outline btn-neutral">وارد شوید</a>
-            <a class="btn btn-neutral">ثبت نام کنید</a>
-          </div>
+
         </div>
         <div class="hero h-full relative">
           <div class="hero-content flex flex-col justify-center items-center">
@@ -57,7 +54,8 @@
             <p class="py-6">
               در مدرسه ژ می‌کوشیم دانش‌آموزان را برای آینده اماده کنیم
             </p>
-            <a hre f="#paths" class="btn bg-gradient-to-r from-primary to-accent text-base-100">پیش ثبت‌نام رایگان</a>
+            <button class="btn bg-gradient-to-r from-primary to-accent text-base-100 scroll-to-register-button">پیش
+              ثبت‌نام رایگان</button>
           </div>
           <div class="animate-bounce absolute bottom-24 p-2 w-10 h-10 rounded-full">
             <svg class="w-6 h-6 text-primary" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -67,25 +65,27 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto py-12 px-4 md:px-8 lg:px-16">
+      <div class="container mx-auto py-12 px-5 md:px-8 lg:px-16">
         <h2 class="text-3xl font-bold text-center mb-8">خدمات ما</h2>
         <div class="flex flex-col w-full mb-5 sm:flex-row">
           <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
             <div class="relative h-full ml-0 mr-0 sm:mr-10">
               <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
               <div
-                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-blue-400 rounded-lg">
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-blue-400 rounded-lg gap-4">
                 <div class="flex flex-col">
                   <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">مدیر هستم</h3>
+                    <h3 id="manager" class="my-2 ml-3 text-lg font-bold text-gray-800">مدیر هستم</h3>
                   </div>
                   <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
                   <p class="mb-2 text-gray-600 text-justify">
-                    مدرسه ژ خدمات مختلفی را از طریق پژوهشرای دانش‌آموزی شهر فاروج به مدیران مدارس ارایه میکند که به شرح
+                    مدرسه ژ خدمات مختلفی را از طریق <b>پژوهشرای دانش‌آموزی شهر فاروج</b> به مدیران مدارس ارایه میکند که
+                    به شرح
                     زیر می‌باشد.
+                    میتوانید برای هماهنگی با پژوهشسرا به شماره  ۰۵۸۳۶۴۲۳۷۹۷ تماس بگیرید
                   </p>
                   <ul class="text-gray-600 list-disc px-4">
-                    <li class="text-justify">در اختیار قرار دادن کارگاه کامپیوتر به مدارس برای استفاده در دروسی که نیاز
+                    <li class="text-justify"> قرار دادن کارگاه کامپیوتر در اختیار مدارس برای استفاده در دروسی که نیاز
                       به
                       کارگاه
                       کامپیوتر دارند
@@ -101,9 +101,10 @@
                     </li>
                   </ul>
                 </div>
-                <a href=""
-                  class="btn w-full border-2 border-blue-400 bg-white text-blue-400 hover:text-white hover:border-white hover:bg-blue-400">پر
-                  کردن فرم همکاری</a>
+                <button onclick="callNumber()"
+                  class="btn w-full border-2 border-blue-400 bg-white text-blue-400 hover:text-white hover:border-white hover:bg-blue-400">
+                  تماس با پژوهشسرای فاروج
+                </button>
               </div>
             </div>
           </div>
@@ -111,29 +112,29 @@
             <div class="relative h-full ml-0 mr-0 sm:mr-10">
               <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
               <div
-                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-yellow-400 rounded-lg gap-4">
                 <div class="flex flex-col">
                   <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">معلم هستم</h3>
+                    <h3 id="teacher" class="my-2 ml-3 text-lg font-bold text-gray-800">معلم هستم</h3>
                   </div>
                   <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
                   <p class="mb-2 text-gray-600 text-justify">
-                    رویکرد مدرسه ژ همکاری با معلمان و متخصصان مختلف برای برکزاری دوره‌های مختلف می‌باشد و خدمات زیر را
+                    رویکرد مدرسه ژ همکاری با معلمان و متخصصان مختلف برای برگزاری دوره‌های مختلف می‌باشد و خدمات زیر را
                     به
                     معلمان ارایه می‌کند
                   </p>
                   <ul class="text-gray-600 list-disc px-4">
                     <li class="text-justify">
-                      همکاری با معلمان برای برگزاری دوره‌های تخصصی و درامدزایی برای معلمان از این طرق
+                      همکاری با معلمان برای برگزاری دوره‌های تخصصی و <b>درامدزایی</b> برای معلمان از طریق برگزاری دوره آموزشی برنامه نویسی
                     </li>
                     <li class="text-justify">
-                      ارایه آموزش تخصصی به معلمان
+                      ارایه آموزش تخصصی به معلمان جهت توانمند سازی معلمان برای برگزاری دوره‌های آموزشی برنامه نویسی برای دانش‌آموزان
                     </li>
                   </ul>
                 </div>
-                <a href=""
+                <button onclick="openTeacherForm()"
                   class="btn self-end w-full border-2 border-yellow-400 bg-white text-yellow-400 hover:text-white hover:border-white hover:bg-yellow-400">پر
-                  کردن فرم همکاری</a>
+                  کردن فرم همکاری</button>
               </div>
             </div>
           </div>
@@ -141,10 +142,10 @@
             <div class="relative h-full ml-0 md:mr-10">
               <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
               <div
-                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-green-500 rounded-lg">
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-green-500 rounded-lg gap-4">
                 <div class="flex flex-col">
                   <div class="flex items-center -mt-1">
-                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">دانش آموز هستم</h3>
+                    <h3 id="student" class="my-2 ml-3 text-lg font-bold text-gray-800">دانش آموز هستم</h3>
                   </div>
                   <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
                   <p class="mb-2 text-gray-600">همه دانش‌آموزان امکان استفاده از خدمات آموزشی مدرسه را دارند و مدرسه سعی
@@ -161,31 +162,160 @@
                     </li>
                   </ul>
                 </div>
-                <a href=""
-                  class="btn self-end w-full border-2 border-green-400 bg-white text-green-400 hover:text-white hover:border-white hover:bg-green-400">
-                  پیش ثبت‌نام در دوره ها
+                <a
+                  class="see-courses btn self-end w-full border-2 border-green-400 bg-white text-green-400 hover:text-white hover:border-white hover:bg-green-400">
+                  مشاهده دوره‌ها
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="container px-5 lg:px-12 mx-auto">
+        <div id="courses" class="divider">
+          مسیرها
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" dir="rtl">
+          <div class="card h-fit card-compact bg-base-100 transition duration-100 ease-in-out hover:shadow-lg border">
+            <figure><img class="h-44 w-full"
+                src="https://assets-global.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b5eb1686fc52_ABM%20College%20Web%20developer%20thumbnail.jpg"
+                alt="Shoes" /></figure>
+            <div class="card-body gap-3">
+              <div>
+                <div class="badge badge-outline badge-primary">متوسطه اول</div>
+                <div class="badge badge-outline badge-primary">متوسطه دوم</div>
+              </div>
+              <h2 class="card-title">مسیر توسعه وب</h2>
+              <p>برای پیش ثبت‌نام دوره مورد نظر را انتخاب کنید و فرم پیش ثبت‌نام‌ را پر کنید</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline w-full scroll-to-register-button">توسعه وب مقدماتی (استاتیک) </button>
+                <button class="btn btn-outline w-full scroll-to-register-button">توسعه وب متوسط (داینامیک) </button>
+                <button class="btn btn-outline w-full scroll-to-register-button">توسعه وب پیشرفته</button>
+              </div>
+            </div>
+          </div>
+          <div class="card h-fit card-compact bg-base-100 transition duration-100 ease-in-out hover:shadow-lg border">
+            <figure><img class="h-44 w-full"
+                src="https://coralogix.com/wp-content/uploads/2022/11/Python-Logging-Gaming.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body gap-3">
+              <div>
+                <div class="badge badge-outline badge-primary">متوسطه اول</div>
+                <div class="badge badge-outline badge-primary">متوسطه دوم</div>
+              </div>
+              <h2 class="card-title">مسیر بازی سازی
+              </h2>
+              <p>برای پیش ثبت‌نام دوره مورد نظر را انتخاب کنید و فرم پیش ثبت‌نام‌ را پر کنید</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline w-full scroll-to-register-button">سی شارپ مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">یونیتی مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">بازی سازی دوبعدی مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">AR مقدماتی</button>
+              </div>
+            </div>
+          </div>
+          <div class="card h-fit card-compact bg-base-100 transition duration-100 ease-in-out hover:shadow-lg border">
+            <figure><img class="h-44 w-full"
+                src="https://www.emizentech.com/blog/wp-content/uploads/sites/2/2023/05/Future-of-AI-Development-1.jpg"
+                alt="Shoes" /></figure>
+            <div class="card-body gap-3">
+              <div>
+                <div class="badge badge-outline badge-primary">متوسطه اول</div>
+                <div class="badge badge-outline badge-primary">متوسطه دوم</div>
+              </div>
+              <h2 class="card-title">مسیر هوش مصنوعی</h2>
+              <p>برای پیش ثبت‌نام دوره مورد نظر را انتخاب کنید و فرم پیش ثبت‌نام‌ را پر کنید</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline w-full scroll-to-register-button">پایتون مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">بینایی ماشین مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">بینایی ماشین متوسط</button>
+              </div>
+            </div>
+          </div>
+          <div class="card h-fit card-compact bg-base-100 transition duration-100 ease-in-out hover:shadow-lg border">
+            <figure><img class="h-44 w-full"
+                src="https://www.hokuapps.com/wp-content/uploads/Banner-A-Guide-to-Android-Application-Development-Process.png"
+                alt="Shoes" /></figure>
+            <div class="card-body gap-3">
+              <div>
+                <div class="badge badge-outline badge-primary">ابتدایی</div>
+                <div class="badge badge-outline badge-primary">متوسطه اول</div>
+              </div>
+              <h2 class="card-title">مسیر برنامه‌نویسی برای کودکان</h2>
+              <p>برای پیش ثبت‌نام دوره مورد نظر را انتخاب کنید و فرم پیش ثبت‌نام‌ را پر کنید</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline w-full scroll-to-register-button">اسکرچ مقدماتی</button>
+                <button class="btn btn-outline w-full scroll-to-register-button">اسکرچ متوسط</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="register" class="mt-10 card w-full bg-primary text-primary-content justify-center items-center">
+          <div class="card-body">
+            <p class="text-justify">برای پیش‌ ثبت‌‌نام در دوره‌های تخصصی برنامه‌نویسی پژوهشسرای دانش‌آموزی شهر فاروج روی
+              دکمه زیر کلیک کنید</p>
+            <div class="card-actions justify-end justify-center items-center">
+              <button onclick="openStudentForm()" class="btn w-full md:max-w-md ">پیش ثبت‌نام رایگان</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer footer-center p-10 border-t text-base-content rounded mt-10">
+        <a href="#" class="p-3 rounded-md bg-black"><img class="w-20" src="./SVG/logo/zhee school.svg" alt="logo"></a>
+        <div class="grid grid-flow-col gap-4">
+          <button onclick="callNumber()" class="btn btn-circle btn-neutral"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1007 13.359L15.5719 12.8272H15.5719L16.1007 13.359ZM16.5562 12.9062L17.085 13.438H17.085L16.5562 12.9062ZM18.9728 12.5894L18.6146 13.2483L18.9728 12.5894ZM20.8833 13.628L20.5251 14.2869L20.8833 13.628ZM21.4217 16.883L21.9505 17.4148L21.4217 16.883ZM20.0011 18.2954L19.4723 17.7636L20.0011 18.2954ZM18.6763 18.9651L18.7459 19.7119H18.7459L18.6763 18.9651ZM8.81536 14.7266L9.34418 14.1947L8.81536 14.7266ZM4.00289 5.74561L3.2541 5.78816L3.2541 5.78816L4.00289 5.74561ZM10.4775 7.19738L11.0063 7.72922H11.0063L10.4775 7.19738ZM10.6342 4.54348L11.2346 4.09401L10.6342 4.54348ZM9.37326 2.85908L8.77286 3.30855V3.30855L9.37326 2.85908ZM6.26145 2.57483L6.79027 3.10667H6.79027L6.26145 2.57483ZM4.69185 4.13552L4.16303 3.60368H4.16303L4.69185 4.13552ZM12.0631 11.4972L12.5919 10.9654L12.0631 11.4972ZM16.6295 13.8909L17.085 13.438L16.0273 12.3743L15.5719 12.8272L16.6295 13.8909ZM18.6146 13.2483L20.5251 14.2869L21.2415 12.9691L19.331 11.9305L18.6146 13.2483ZM20.8929 16.3511L19.4723 17.7636L20.5299 18.8273L21.9505 17.4148L20.8929 16.3511ZM18.6067 18.2184C17.1568 18.3535 13.4056 18.2331 9.34418 14.1947L8.28654 15.2584C12.7186 19.6653 16.9369 19.8805 18.7459 19.7119L18.6067 18.2184ZM9.34418 14.1947C5.4728 10.3453 4.83151 7.10765 4.75168 5.70305L3.2541 5.78816C3.35456 7.55599 4.14863 11.144 8.28654 15.2584L9.34418 14.1947ZM10.7195 8.01441L11.0063 7.72922L9.9487 6.66555L9.66189 6.95073L10.7195 8.01441ZM11.2346 4.09401L9.97365 2.40961L8.77286 3.30855L10.0338 4.99296L11.2346 4.09401ZM5.73263 2.04299L4.16303 3.60368L5.22067 4.66736L6.79027 3.10667L5.73263 2.04299ZM10.1907 7.48257C9.66189 6.95073 9.66117 6.95144 9.66045 6.95216C9.66021 6.9524 9.65949 6.95313 9.659 6.95362C9.65802 6.95461 9.65702 6.95561 9.65601 6.95664C9.65398 6.95871 9.65188 6.96086 9.64972 6.9631C9.64539 6.96759 9.64081 6.97245 9.63599 6.97769C9.62634 6.98816 9.61575 7.00014 9.60441 7.01367C9.58174 7.04072 9.55605 7.07403 9.52905 7.11388C9.47492 7.19377 9.41594 7.2994 9.36589 7.43224C9.26376 7.70329 9.20901 8.0606 9.27765 8.50305C9.41189 9.36833 10.0078 10.5113 11.5343 12.0291L12.5919 10.9654C11.1634 9.54499 10.8231 8.68059 10.7599 8.27309C10.7298 8.07916 10.761 7.98371 10.7696 7.96111C10.7748 7.94713 10.7773 7.9457 10.7709 7.95525C10.7677 7.95992 10.7624 7.96723 10.7541 7.97708C10.75 7.98201 10.7451 7.98759 10.7394 7.99381C10.7365 7.99692 10.7335 8.00019 10.7301 8.00362C10.7285 8.00534 10.7268 8.00709 10.725 8.00889C10.7241 8.00979 10.7232 8.0107 10.7223 8.01162C10.7219 8.01208 10.7212 8.01278 10.7209 8.01301C10.7202 8.01371 10.7195 8.01441 10.1907 7.48257ZM11.5343 12.0291C13.0613 13.5474 14.2096 14.1383 15.0763 14.2713C15.5192 14.3392 15.8763 14.285 16.1472 14.1841C16.28 14.1346 16.3858 14.0763 16.4658 14.0227C16.5058 13.9959 16.5392 13.9704 16.5663 13.9479C16.5799 13.9367 16.5919 13.9262 16.6024 13.9166C16.6077 13.9118 16.6126 13.9073 16.6171 13.903C16.6194 13.9008 16.6215 13.8987 16.6236 13.8967C16.6246 13.8957 16.6256 13.8947 16.6266 13.8937C16.6271 13.8932 16.6279 13.8925 16.6281 13.8923C16.6288 13.8916 16.6295 13.8909 16.1007 13.359C15.5719 12.8272 15.5726 12.8265 15.5733 12.8258C15.5735 12.8256 15.5742 12.8249 15.5747 12.8244C15.5756 12.8235 15.5765 12.8226 15.5774 12.8217C15.5793 12.82 15.581 12.8183 15.5827 12.8166C15.5862 12.8133 15.5895 12.8103 15.5926 12.8074C15.5988 12.8018 15.6044 12.7969 15.6094 12.7929C15.6192 12.7847 15.6265 12.7795 15.631 12.7764C15.6403 12.7702 15.6384 12.773 15.6236 12.7785C15.5991 12.7876 15.501 12.8189 15.3038 12.7886C14.8905 12.7253 14.02 12.3853 12.5919 10.9654L11.5343 12.0291ZM9.97365 2.40961C8.95434 1.04802 6.94996 0.83257 5.73263 2.04299L6.79027 3.10667C7.32195 2.578 8.26623 2.63181 8.77286 3.30855L9.97365 2.40961ZM4.75168 5.70305C4.73201 5.35694 4.89075 4.9954 5.22067 4.66736L4.16303 3.60368C3.62571 4.13795 3.20329 4.89425 3.2541 5.78816L4.75168 5.70305ZM19.4723 17.7636C19.1975 18.0369 18.9029 18.1908 18.6067 18.2184L18.7459 19.7119C19.4805 19.6434 20.0824 19.2723 20.5299 18.8273L19.4723 17.7636ZM11.0063 7.72922C11.9908 6.7503 12.064 5.2019 11.2346 4.09401L10.0338 4.99295C10.4373 5.53193 10.3773 6.23938 9.9487 6.66555L11.0063 7.72922ZM20.5251 14.2869C21.3429 14.7315 21.4703 15.7769 20.8929 16.3511L21.9505 17.4148C23.2908 16.0821 22.8775 13.8584 21.2415 12.9691L20.5251 14.2869ZM17.085 13.438C17.469 13.0562 18.0871 12.9616 18.6146 13.2483L19.331 11.9305C18.2474 11.3414 16.9026 11.5041 16.0273 12.3743L17.085 13.438Z"
+                fill="#ffffff" />
+            </svg></button>
+          <button onclick="openMap()" class="btn btn-circle btn-neutral"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></button>
+          <button onclick="openInstagram()" class="btn btn-circle btn-neutral"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                fill="#ffffff" />
+              <path
+                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                fill="#ffffff" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                fill="#ffffff" />
+            </svg></button>
+        </div>
+        <p>تلفن:‌ </p>
+        <p>آدرس : فاروج- خیابان شهید موفق 18  (دانش) - آموزشگاه ابتدایی شهید شوشتری و باهنر - پژوهش سرای دانش آموزی</p>
+        <aside>
+          <p>Copyright © 2024 - All right reserved by zheeschool</p>
+        </aside>
+      </footer>
     </div>
 
-  <div class="drawer-side">
-    <label for="my-drawer-3" class="drawer-overlay"></label>
-
-    <ul class="menu p-4 w-80 min-h-full bg-base-100" dir="rtl">
-      <!-- Sidebar content here -->
-      <li><a>وبینارها</a></li>
-      <li><a>منتور شوید</a></li>
-      <li><a>منتور پیدا کنید</a></li>
-      <div class="flex flex-col gap-2 mt-5">
-        <a class="btn btn-outline btn-neutral">وارد شوید</a>
-        <a class="btn btn-neutral">ثبت نام کنید</a>
-      </div>
-    </ul>
-  </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-80 min-h-full bg-base-100" dir="rtl">
+        <div class="w-full flex justify-center">
+          <a href="#" class="p-3 rounded-md bg-black"><img class="w-20" src="./SVG/logo/zhee school.svg" alt="logo"></a>
+        </div>
+        <div class="divider"></div>
+        <!-- Sidebar content here -->
+        <li><a href="#student">دانش‌آموز هستم</a></li>
+        <li><a href="#teacher">معلم هستم</a></li>
+        <li><a href="#manager">مدیر هستم</a></li>
+        <div class="flex flex-col gap-2 mt-5">
+          <button class="btn btn-outline btn-neutral scroll-to-register-button">پیش ثبت‌نام رایگان</button>
+        </div>
+      </ul>
+    </div>
   </div>
   <script src="./asset/script.js"></script>
 </body>
