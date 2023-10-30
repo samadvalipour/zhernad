@@ -1,8 +1,8 @@
 [data-theme='mytheme'] {
   /* primary */
-  --p: 15 95% 62%;
+  --p: 6 91% 66%;
   /* primary focus */
-  --pf: 15 88% 60%;
+  --pf: 6 91% 51%;
   /* primary content */
   --pc: 0 0% 100%;
   /* secondary */
@@ -12,11 +12,11 @@
   /* secondary content */
   --sc: 0 0% 100%;
   /* accent */
-  --a: 136 54% 43%;
+  --a: 40 96% 58%;
   /* accent content */
   --ac: 0 0% 100%;
   /* accent focus */
-  --af: 136 54% 39%;
+  --af: 40 96% 53%;
   /* info */
   --in: 198 93% 60%;
   /* info content */
@@ -38,7 +38,7 @@
   /* neutral focus */
   --nf: 223 17% 8%;
   /* neutral content */
-  --nc: 220 13% 69%;
+  --nc: 0 0% 100%;
   /* base 100 */
   --b1: 0 0% 100%;
   /* base 200 */

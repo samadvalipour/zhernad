@@ -1,112 +1,193 @@
 <!DOCTYPE html>
-<html lang="en,fa" dir="rtl">
+<html lang="en,fa" data-theme="mytheme">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./asset/daisyui.css">
+  <script src="./asset/tailwind.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>درباره ژرناد</title>
+  <title>مدرسه ژ</title>
 </head>
 
 <body data-theme="mytheme" style="font-family: 'Vazirmatn', sans-serif;">
-  <div class="hero min-h-screen bg-base-300 relative">
-    <div class="hero-content flex flex-col text-base-content text-center px-5">
-      <div class="flex justify-center">
-        <img class="w-full m-5" src="./SVG/logo/logo primary.svg" alt="" srcset="">
-      </div>
-    </div>
-    <div class="absolute animate-bounce bottom-3 text-secondary">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" stroke="currentColor"
-        image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 312.36">
-        <path fill-rule="nonzero" d="m32.66 5.71 220.49 241.11L479.35 0 512 29.87 253.12 312.36 0 35.58z" />
-      </svg>
-    </div>
-  </div>
-  <div class="hero min-h-screen bg-base-100 relative">
-      <div class="hero-content text-center p-5">
-        <div class="max-w-xl">
-          <h1 class="text-5xl font-bold">درباره ژرناد</h1>
-          <p class="pt-10 text-justify tracking-tight">
-پروژه ژرناد یک پروژه 
-<span class="before:block before:absolute before:rounded-sm before:-inset-1 px-1 mx-1 before:skew-y-3 before:-skew-x-3 before:bg-green-500 relative inline-block">
-  <span class="relative text-white">متن باز</span>
-</span>
-،
-<span class="before:block before:absolute before:rounded-sm before:-inset-1 px-1 mx-1 before:-skew-y-3 before:skew-x-3 before:bg-pink-500 relative inline-block">
-  <span class="relative text-white">رایگان</span>
-</span>
-  و
-  <span class="before:block before:absolute before:rounded-sm before:-inset-1 px-1 mx-1 before:-skew-y-3 before:-skew-x-3 before:bg-orange-500 relative inline-block">
-    <span class="relative text-white">داوطلبانه</span>
-  </span>  
-  است. 
-هدف از این پروژه برقراری ارتباط بین 
-دانش‌آموزان و متخصصین است تا به کمک تجربه متخصصین مسیر 
-یادگیری مهارت‌های مختلف برای دانش‌آموزان هموار شود
-</p>
-            <p class="pt-6 text-justify tracking-tight">
-نسخه اول این پروژه با همکاری پژوهشسرای دانش‌آموزی شهر فاروج در استان خراسان شمالی اجرا می‌شود! و دانش‌آموزان رشته شبکه و نرم‌افزار از دو هنرستان دخترانه و پسرانه این شهر مخاطبین این نسخه هستند
-</p>
+
+  <div class="drawer drawer-end">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col" dir="rtl">
+      <!-- Navbar -->
+      <div class="w-full h-screen mx-auto">
+        <div class="navbar bg-base-100 w-full shadow-sm lg:px-12">
+          <div class="navbar-start flex-none lg:hidden">
+            <label for="my-drawer-3" class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </label>
+          </div>
+          <div class="navbar-start hidden lg:flex">
+            <a class="p-3 rounded-md bg-black"><img class="w-20" src="./SVG/logo/zhee school.svg" alt="logo"></a>
+            <ul class="menu menu-horizontal px-4">
+              <li><a>وبینارها</a></li>
+              <li><a>دوره‌ها</a></li>
+              <li><a>همکاران</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <a class="p-3 rounded-md bg-black"><img class="w-14" src="./SVG/logo/zhee school.svg" alt="logo"></a>
+          </div>
+          <div class="navbar-end gap-1 hidden lg:flex">
+            <a class="btn btn-outline btn-neutral">وارد شوید</a>
+            <a class="btn btn-neutral">ثبت نام کنید</a>
+          </div>
         </div>
-      </div>
-    <div class="absolute animate-bounce bottom-3 text-secondary">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" stroke="currentColor"
-        image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 312.36">
-        <path fill-rule="nonzero" d="m32.66 5.71 220.49 241.11L479.35 0 512 29.87 253.12 312.36 0 35.58z" />
-      </svg>
-    </div>
-  </div>
-
-  <div class="hero bg-base-100 min-h-screen py-10 ">
-    <div class="w-full grid grid-cols-1 gap-4 md:grid-cols-3 px-2 md:px-10">
-
-      <div class="card card-compact h-fit w-full bg-base-100 border">
-        <div class="card-body">
-          <video class="w-full rounded-box" controls
-            src="#"></video>
-          <h2 class="text-lg font-bold text-center mt-5">توسعه‌‌دهنده وب</h2>
-          <div class="card-actions justify mt-3">
-            <a href="./webpaths/backendpath/php/path.html" class="btn btn-primary btn-outline w-full">مسیر توسعه وب با PHP</a>
-            <a href="./webpaths/backendpath/python/path.html" class="btn btn-primary btn-outline w-full">مسیر توسعه وب با Python</a>
+        <div class="hero h-full relative">
+          <div class="hero-content flex flex-col justify-center items-center">
+            <div>
+              <img class="w-96" src="./SVG/logo/black zhee school.svg" alt="logo">
+            </div>
+            <p class="py-6">
+              در مدرسه ژ می‌کوشیم دانش‌آموزان را برای آینده اماده کنیم
+            </p>
+            <a hre f="#paths" class="btn bg-gradient-to-r from-primary to-accent text-base-100">پیش ثبت‌نام رایگان</a>
+          </div>
+          <div class="animate-bounce absolute bottom-24 p-2 w-10 h-10 rounded-full">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
           </div>
         </div>
       </div>
-      <div class="card card-compact h-fit w-full bg-base-100 border">
-        <div class="card-body">
-          <video class="w-full rounded-box" controls
-            src="#"></video>
-          <h2 class="text-lg font-bold text-center mt-5">توسعه‌‌دهنده دسکتاپ!</h2>
-          <div class="card-actions justify mt-3">
-            <a class="btn btn-primary btn-outline w-full">مسیر پایتون</a>
-            <a class="btn btn-primary btn-outline w-full">مسیر سی شارپ</a>
+      <div class="container mx-auto py-12 px-4 md:px-8 lg:px-16">
+        <h2 class="text-3xl font-bold text-center mb-8">خدمات ما</h2>
+        <div class="flex flex-col w-full mb-5 sm:flex-row">
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="relative h-full ml-0 mr-0 sm:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
+              <div
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-blue-400 rounded-lg">
+                <div class="flex flex-col">
+                  <div class="flex items-center -mt-1">
+                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">مدیر هستم</h3>
+                  </div>
+                  <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
+                  <p class="mb-2 text-gray-600 text-justify">
+                    مدرسه ژ خدمات مختلفی را از طریق پژوهشرای دانش‌آموزی شهر فاروج به مدیران مدارس ارایه میکند که به شرح
+                    زیر می‌باشد.
+                  </p>
+                  <ul class="text-gray-600 list-disc px-4">
+                    <li class="text-justify">در اختیار قرار دادن کارگاه کامپیوتر به مدارس برای استفاده در دروسی که نیاز
+                      به
+                      کارگاه
+                      کامپیوتر دارند
+                    </li>
+                    <li class="text-justify">
+                      ارایه آموزش تخصصی به معلمان مدارس
+                    </li>
+                    <li class="text-justify">
+                      برگزاری دوره‌های آموزش برنامه نویسی برای دانش‌آموزان
+                    </li>
+                    <li class="text-justify">
+                      ثبت‌نام دانش‌آموزان مستعد و علاقه‌مند در مسابقات مختلف
+                    </li>
+                  </ul>
+                </div>
+                <a href=""
+                  class="btn w-full border-2 border-blue-400 bg-white text-blue-400 hover:text-white hover:border-white hover:bg-blue-400">پر
+                  کردن فرم همکاری</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="card card-compact h-fit w-full bg-base-100 border">
-        <div class="card-body">
-          <video class="w-full rounded-box" controls
-            src="#"></video>
-          <h2 class="text-lg font-bold text-center mt-5">توسعه‌‌دهنده موبایل</h2>
-          <div class="card-actions justify mt-3 grid grid-cols-2">
-            <a class="btn btn-primary btn-outline w-full">مسیر اندروید </a>
-            <a class="btn btn-primary btn-outline w-full">مسیر سویفت</a>
-            <a class="btn btn-primary btn-outline w-full">مسیر فلاتر</a>
-            <a class="btn btn-primary btn-outline w-full">مسیر کاتلین</a>
-            <a class="btn btn-primary btn-outline w-full">مسیر ریکت</a>
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="relative h-full ml-0 mr-0 sm:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+              <div
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                <div class="flex flex-col">
+                  <div class="flex items-center -mt-1">
+                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">معلم هستم</h3>
+                  </div>
+                  <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
+                  <p class="mb-2 text-gray-600 text-justify">
+                    رویکرد مدرسه ژ همکاری با معلمان و متخصصان مختلف برای برکزاری دوره‌های مختلف می‌باشد و خدمات زیر را
+                    به
+                    معلمان ارایه می‌کند
+                  </p>
+                  <ul class="text-gray-600 list-disc px-4">
+                    <li class="text-justify">
+                      همکاری با معلمان برای برگزاری دوره‌های تخصصی و درامدزایی برای معلمان از این طرق
+                    </li>
+                    <li class="text-justify">
+                      ارایه آموزش تخصصی به معلمان
+                    </li>
+                  </ul>
+                </div>
+                <a href=""
+                  class="btn self-end w-full border-2 border-yellow-400 bg-white text-yellow-400 hover:text-white hover:border-white hover:bg-yellow-400">پر
+                  کردن فرم همکاری</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2">
+            <div class="relative h-full ml-0 md:mr-10">
+              <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
+              <div
+                class="relative h-full flex flex-col justify-between p-5 bg-white border-2 border-green-500 rounded-lg">
+                <div class="flex flex-col">
+                  <div class="flex items-center -mt-1">
+                    <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">دانش آموز هستم</h3>
+                  </div>
+                  <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
+                  <p class="mb-2 text-gray-600">همه دانش‌آموزان امکان استفاده از خدمات آموزشی مدرسه را دارند و مدرسه سعی
+                    دارد از طرق مختلف به دانش‌آموزان ارایه خدمت کند</p>
+                  <ul class="text-gray-600 list-disc px-4">
+                    <li class="text-justify">
+                      برگزاری دوره‌های آموزش برنامه نویسی برای دانش‌آموزان
+                    </li>
+                    <li class="text-justify">
+                      ثبت‌نام دانش‌آموزان مستعد و علاقه‌مند در مسابقات مختلف
+                    </li>
+                    <li class="text-justify">
+                      راهنمایی دانش‌آموزان برای گسترش مهارت های تخصصی در حوزه کامپیوتر
+                    </li>
+                  </ul>
+                </div>
+                <a href=""
+                  class="btn self-end w-full border-2 border-green-400 bg-white text-green-400 hover:text-white hover:border-white hover:bg-green-400">
+                  پیش ثبت‌نام در دوره ها
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+  <div class="drawer-side">
+    <label for="my-drawer-3" class="drawer-overlay"></label>
+
+    <ul class="menu p-4 w-80 min-h-full bg-base-100" dir="rtl">
+      <!-- Sidebar content here -->
+      <li><a>وبینارها</a></li>
+      <li><a>منتور شوید</a></li>
+      <li><a>منتور پیدا کنید</a></li>
+      <div class="flex flex-col gap-2 mt-5">
+        <a class="btn btn-outline btn-neutral">وارد شوید</a>
+        <a class="btn btn-neutral">ثبت نام کنید</a>
+      </div>
+    </ul>
   </div>
+  </div>
+  <script src="./asset/script.js"></script>
 </body>
 
 </html>
