@@ -1,32 +1,19 @@
 name: Deploy to cPanel
-
 on:
   push:
     branches:
       - ZheeSchool
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
+      with:
+        fetch-depth: 2
     - name: Deploy to cPanel
-      env:
+      uses: Samkirkland/FTP-Deploy-Action@3.1.1
+      with:
         CPANEL_USERNAME: ${{ secrets.ZHEESCHOOL_FTP_USERNAME }}
         CPANEL_PASSWORD: ${{ secrets.ZHEESCHOOL_FTP_PASSWORD }}
         CPANEL_DOMAIN: ${{ secrets.ZHEESCHOOL_FTP_SERVER }}
-      run: |
-        # Install cPanel CLI
-        curl -o latest -L https://securedownloads.cpanel.net/latest
-        sh latest --skip-cleanup
-        rm -f latest
-
-        # Deploy your website to cPanel public_html directory
-        uapi --user=$CPANEL_USERNAME --output=json --server=$CPANEL_DOMAIN FileManager upload_files 'dir=public_html' file-1=@./path/to/your/files
-
-        # Optional: Clear cache or perform any other necessary tasks
-        # uapi --user=$CPANEL_USERNAME --output=json --server=$CPANEL_DOMAIN Your_Module Your_function arg1=...
-
