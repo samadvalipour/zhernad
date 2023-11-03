@@ -1,0 +1,20 @@
+name: Deploy to cPanel
+on:
+  push:
+    branches:
+      - ZheeSchool
+  workflow_dispatch:
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.ZHEESCHOOL_FTP_SERVER }}
+        username: ${{ secrets.ZHEESCHOOL_FTP_USERNAME }}
+        password: ${{ secrets.ZHEESCHOOL_FTP_PASSWORD }}
