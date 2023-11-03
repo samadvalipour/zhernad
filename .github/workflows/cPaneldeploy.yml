@@ -5,17 +5,16 @@ on:
       - ZheeSchool
   workflow_dispatch:
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        fetch-depth: 2
-    - name: Deploy to cPanel
-      uses: Samkirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: ${{ secrets.ZHEESCHOOL_FTP_SERVER }}
-        ftp-username: ${{ secrets.ZHEESCHOOL_FTP_USERNAME }}
-        ftp-password: ${{ secrets.ZHEESCHOOL_FTP_PASSWORD }}
+        server: ${{ secrets.ZHEESCHOOL_FTP_SERVER }}
+        username: ${{ secrets.ZHEESCHOOL_FTP_USERNAME }}
+        password: ${{ secrets.ZHEESCHOOL_FTP_PASSWORD }}
